@@ -1,5 +1,5 @@
-import androidx.compose.ui.graphics.Color
 package com.sypcoin.wallet.ui.screens
+import androidx.compose.ui.graphics.Color
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
