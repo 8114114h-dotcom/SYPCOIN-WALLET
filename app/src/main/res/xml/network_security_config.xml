@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Allows HTTP connections to local/LAN RPC nodes during development.
+     In production, use HTTPS only and remove the domain allowlist. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.0.0/8</domain>
+        <domain includeSubdomains="true">192.168.0.0/16</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
